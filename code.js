@@ -69,5 +69,32 @@ function factorial(num1) {
 ------------------------------------------------------
 Bonus - Fibonacci Function
 */
-
+// FIGURE OUT FIBONACCI FUNCTION
+function fibonacci(n) {
+  if (n > 5) {
+    let num1 = 2;
+    let num2 = 3;
+    let num = 0;
+    for (let i = 5; i < n; i++) {
+      num = num1 + num2;
+      num1 = num - num1;
+      num2 = num;
+    }
+    return num;
+  } else if (n == 1) {
+    let num = 0;
+    return num;
+  } else if (n == 2 || n == 3) {
+    let num = 1;
+    return num;
+  } else if (n == 4) {
+    let num = 2;
+    return num;
+  } else if (n == 5) {
+    let num = 3;
+    return num;
+  } else if (n < 1) {
+    console.log("You can only use a positive number.");
+  }
+}
 // Your Code Here.
