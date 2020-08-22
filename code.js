@@ -9,9 +9,9 @@ Add Function
 function add(num1, num2) {
   let sum = num1 + num2;
   return sum;
-  console.log(sum);
 }
 
+console.log(add(2, 3));
 // Your Code Here.
 
 /*
@@ -31,8 +31,9 @@ function multiply(num1, num2) {
     product -= num1;
   }
   return product;
-  console.log(product);
 }
+
+console.log(multiply(4, 7));
 // Your Code Here.
 
 /*
@@ -46,8 +47,9 @@ function power(x, n) {
     expResult = multiply(expResult, x);
   }
   return expResult;
-  console.log(expResult);
 }
+
+console.log(power(4, 3));
 
 // Your Code Here.
 
@@ -64,8 +66,9 @@ function factorial(num1) {
   }
 
   return factResult;
-  console.log(factResult);
 }
+
+console.log(factorial(6));
 
 // Your Code Here.
 
@@ -85,25 +88,22 @@ function fibonacci(n) {
       num2 = num;
     }
     return num;
-    console.log(num);
   } else if (n == 1) {
     let num = 0;
     return num;
-    console.log(num);
   } else if (n == 2 || n == 3) {
     let num = 1;
     return num;
-    console.log(num);
   } else if (n == 4) {
     let num = 2;
     return num;
-    console.log(num);
   } else if (n == 5) {
     let num = 3;
     return num;
-    console.log(num);
   } else if (n < 1) {
     console.log("You can only use a positive number.");
   }
 }
+
+console.log(fibonacci(7));
 // Your Code Here.
