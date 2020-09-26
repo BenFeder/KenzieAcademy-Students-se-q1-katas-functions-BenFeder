@@ -107,3 +107,23 @@ function fibonacci(n) {
 
 console.log(fibonacci(7));
 // Your Code Here.
+
+// UNIT TESTS GO HERE
+
+function testPower0() {
+  let result = power(2, 0);
+  console.assert(
+    result === 1,
+    JSON.stringify({ function: "power(2,0)", expected: 1, result: result })
+  );
+}
+testPower0();
+
+function testPower1() {
+  let result = power(3, 1);
+  console.assert(
+    result === 3,
+    JSON.stringify({ function: "power(3,1)", expected: 3, result: result })
+  );
+}
+testPower1();
